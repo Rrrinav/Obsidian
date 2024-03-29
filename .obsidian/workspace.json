@@ -1,0 +1,211 @@
+{
+  "main": {
+    "id": "2ebbe18f84450cef",
+    "type": "split",
+    "children": [
+      {
+        "id": "848a91d0bc89d20b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "36a7725f54a12102",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ideas/Programming.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a1a920c8450a896e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ideas/Programming.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ec3ec3ccec46ba81",
+    "type": "split",
+    "children": [
+      {
+        "id": "2fdc6705df17b30e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d8227f2ff75d416e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9fcb5457a8e66204",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "350cc3b54c150105",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "32804aaa3c3ded30",
+    "type": "split",
+    "children": [
+      {
+        "id": "bfbb47b363b3244c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a5e6e210b9e1b3ad",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Ideas/Programming.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c52c1e5af42fba1c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Ideas/Programming.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "aacb95d60b817158",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "3508efa58c9def16",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Ideas/Programming.md"
+              }
+            }
+          },
+          {
+            "id": "eb1e6d8be424870e",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "a1a920c8450a896e",
+  "lastOpenFiles": [
+    "Projects/C++/Fluid Simulations.md",
+    "Ideas/Programming.md",
+    "Competitive GFG/4. Basic concepts and Techniques/Prefix Sum.md",
+    "Projects/C++/SQLite.md",
+    "Projects/C++/Ray Tracer.md",
+    "Resources.md",
+    "Competitive",
+    "Competitive GFG/4. Basic concepts and Techniques/Two Pointer.md",
+    "Competitive GFG/4. Basic concepts and Techniques",
+    "Competitive GFG/3. Basic Practices/Typedef and Macros.md",
+    "Competitive GFG/3. Basic Practices/Input  and Output.md",
+    "Competitive GFG/3. Basic Practices",
+    "Table.md",
+    "2024-03-07.md",
+    "Projects/Index.md",
+    "Projects/Web Dev",
+    "Projects/C++",
+    "Projects",
+    "Projects/Web Dev/J and K Website.md",
+    "Ideas/Programming/Web Dev/JandK Website.md",
+    "Projects/Web Dev/Algorithm Visualizer.md",
+    "Competitive GFG/2. STL/STL.md",
+    "Competitive Programming/Recursion.md",
+    "Competitive GFG/2. STL",
+    "Competitive GFG/1. Algorithm Analysis/Space Complexity.md",
+    "Competitive GFG/1. Algorithm Analysis/Algorithm Analysis.md",
+    "Projects/C++/Table Library.md",
+    "Ideas/Programming/C++",
+    "Ideas/Programming",
+    "Ideas/Programming/Web Dev",
+    "Competitive GFG/Algo_analysis.excalidraw.md",
+    "Notes.md",
+    "problem.md",
+    "Untitled.canvas",
+    "2023-12-26.md"
+  ]
+}
