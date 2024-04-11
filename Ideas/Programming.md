@@ -1,9 +1,11 @@
 # Web Dev
-- [[Algorithm Visualizer]]            **Not started
-- [[J and K Website]]                  **Not Started**
-- [Discord Clone](https://youtu.be/ZbX4Ok9YX94?si=jNpfpeurOAGAEGVp)                  **Not Started**
-- Digit Recognizer                  **Done**
-- [[Online IDE]]                            **Not Started**
+- [[Algorithm Visualizer]]               **Not started
+- [[J and K Website]]                     **Not Started**
+- [Discord Clone](https://youtu.be/ZbX4Ok9YX94?si=jNpfpeurOAGAEGVp)                     **Not Started**
+- Digit Recognizer                     **Done**
+- [[Online IDE]]                               **Not Started**
+- Cellular automata Website    **Not Started
+- 
 # C++
 - [[Ray Tracer]]                           **Not Started**
 - [[Table Library]]                       **Not Started**
