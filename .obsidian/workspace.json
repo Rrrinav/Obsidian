@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "36a7725f54a12102",
+            "id": "e1d6d6cda8aa7cfa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ideas/Programming.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a1a920c8450a896e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Ideas/Programming.md",
+                "file": "Cellular Automaton/Introduction.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "32804aaa3c3ded30",
@@ -98,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ideas/Programming.md",
+                "file": "Cellular Automaton/Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ideas/Programming.md",
+                "file": "Cellular Automaton/Introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ideas/Programming.md"
+                "file": "Cellular Automaton/Introduction.md"
               }
             }
           },
@@ -166,18 +154,22 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a1a920c8450a896e",
+  "active": "e1d6d6cda8aa7cfa",
   "lastOpenFiles": [
-    "Projects/C++/Fluid Simulations.md",
+    "Resources.md",
+    "Cellular Automaton/Introduction.md",
+    "Cellular Automaton",
+    "README.md",
+    "Online IDE.md",
     "Ideas/Programming.md",
+    "Projects/C++/Fluid Simulations.md",
     "Competitive GFG/4. Basic concepts and Techniques/Prefix Sum.md",
     "Projects/C++/SQLite.md",
     "Projects/C++/Ray Tracer.md",
-    "Resources.md",
     "Competitive",
     "Competitive GFG/4. Basic concepts and Techniques/Two Pointer.md",
     "Competitive GFG/4. Basic concepts and Techniques",
@@ -201,11 +193,9 @@
     "Projects/C++/Table Library.md",
     "Ideas/Programming/C++",
     "Ideas/Programming",
-    "Ideas/Programming/Web Dev",
     "Competitive GFG/Algo_analysis.excalidraw.md",
     "Notes.md",
     "problem.md",
-    "Untitled.canvas",
-    "2023-12-26.md"
+    "Untitled.canvas"
   ]
 }
