@@ -6,4 +6,10 @@
 - utkarsh guptas math in cp series in unacademy it is free
 - [Books](https://codeforces.com/blog/entry/50648)
 - [Basic Topics](https://www.codechef.com/wiki/tutorial-number-theory)
+
+## Misc 
+- [Reva Freedman Department of Computer Science Northern Illinois University](https://faculty.cs.niu.edu/~freedman/index.html)
+	Contains lecture notes on a lot of topics, v good !!
+- [Ray casting tutorial](https://lodev.org/cgtutor/raycasting.html)
+- [Backend Course or something](https://www.boot.dev/tracks/backend)
 - 

@@ -4,22 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "848a91d0bc89d20b",
+        "id": "94a18487e6f54f25",
         "type": "tabs",
         "children": [
           {
-            "id": "e1d6d6cda8aa7cfa",
+            "id": "d78b1fdb4d0ccce1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cellular Automaton/Introduction.md",
+                "file": "Resources.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f27a289a76a43d4c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Competitive GFG/Dynamic Programming/4. Longest common sub-sequence (Tab).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "748d1adbe422a1eb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Competitive GFG/Dynamic Programming/5. Longest Increasing sub-sequence.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "475ce8e184f6470d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6. Longest Increasing Sub-sequence 0(nlogn).md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -69,8 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "32804aaa3c3ded30",
@@ -86,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cellular Automaton/Introduction.md",
+                "file": "6. Longest Increasing Sub-sequence 0(nlogn).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cellular Automaton/Introduction.md",
+                "file": "6. Longest Increasing Sub-sequence 0(nlogn).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cellular Automaton/Introduction.md"
+                "file": "6. Longest Increasing Sub-sequence 0(nlogn).md"
               }
             }
           },
@@ -158,14 +194,28 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e1d6d6cda8aa7cfa",
+  "active": "475ce8e184f6470d",
   "lastOpenFiles": [
-    "Resources.md",
-    "Cellular Automaton/Introduction.md",
-    "Cellular Automaton",
-    "README.md",
+    "Competitive GFG/Dynamic Programming/5. Longest Increasing sub-sequence.md",
+    "6. Longest Increasing Sub-sequence 0(nlogn).md",
+    "Competitive GFG/Dynamic Programming/4. Longest common sub-sequence (Tab).md",
+    "Competitive GFG/Dynamic Programming/1. Introduction.md",
+    "Competitive GFG/Dynamic Programming/Pasted image 20240719222301.png",
     "Online IDE.md",
+    "Competitive GFG/Dynamic Programming/3. Longest Common Sub-sequence (memo).md",
+    "Competitive GFG/Dynamic Programming/2. Tabulation vs. Memoization.md",
+    "Resources.md",
+    "README.md",
+    "Competitive GFG/Dynamic Programming/Pasted image 20240719222309.png",
+    "Competitive GFG/Dynamic Programming",
     "Ideas/Programming.md",
+    "Cellular Automaton/RESOURCES.md",
+    "Cellular Automaton/Introduction.md",
+    "Excalidraw/Drawing 2024-06-02 15.53.03.excalidraw.md",
+    "Excalidraw/Drawing 2024-06-02 15.47.08.excalidraw.md",
+    "Excalidraw",
+    "Competitive GFG/1. Algorithm Analysis/Algorithm Analysis.md",
+    "Cellular Automaton",
     "Projects/C++/Fluid Simulations.md",
     "Competitive GFG/4. Basic concepts and Techniques/Prefix Sum.md",
     "Projects/C++/SQLite.md",
@@ -183,19 +233,7 @@
     "Projects/C++",
     "Projects",
     "Projects/Web Dev/J and K Website.md",
-    "Ideas/Programming/Web Dev/JandK Website.md",
-    "Projects/Web Dev/Algorithm Visualizer.md",
-    "Competitive GFG/2. STL/STL.md",
-    "Competitive Programming/Recursion.md",
     "Competitive GFG/2. STL",
-    "Competitive GFG/1. Algorithm Analysis/Space Complexity.md",
-    "Competitive GFG/1. Algorithm Analysis/Algorithm Analysis.md",
-    "Projects/C++/Table Library.md",
-    "Ideas/Programming/C++",
-    "Ideas/Programming",
-    "Competitive GFG/Algo_analysis.excalidraw.md",
-    "Notes.md",
-    "problem.md",
     "Untitled.canvas"
   ]
 }
