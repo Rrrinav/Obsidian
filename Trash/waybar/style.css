@@ -1,11 +1,13 @@
+@import url("../../.cache/wal/colors-waybar.css");
+
 * {
-	font-size: 13px;
-	font-family: JetBrainsMono;
+  font-size: 13px;
+  font-family: JetBrainsMono;
 }
 
 window#waybar {
-    background:none;
-	color: #fdf6e3;
+  background: none;
+  color: @color7;
 }
 
 /* #1c0226 */
@@ -21,73 +23,75 @@ window#waybar {
 #disk,
 #network,
 #tray {
-	background: none;
-    /* border: 2px solid #ffccff; */
-    border-radius: 2px;
-    padding: 4px 5px;
-    margin: 2px;
+  background: none;
+  /* border: 2px solid #ffccff;  */
+  border-radius: 2px;
+  padding: 3px 5px;
+  margin: 0px 2px;
 }
 
 #tray {
-	background: #15acb1;
-	padding: 4px 12px;
-	margin: 2px;
-	margin-right: 10px;
-	border-radius: 10;
-	opacity: 0.5;
+  background: #15acb1;
+  padding: 4px 12px;
+  margin: 2px;
+  margin-right: 10px;
+  border-radius: 10px;
+  opacity: 0.5;
 }
 
 #clock.2,
 #clock.3 {
-	opacity: 0.8;
-	background-color: #150b24;
-	color: #b5f5d2;
-	padding: 4px 15px;
-
+  opacity: 0.8;
+  background-color: @color0;
+  color: @color13;
+  padding: 4px 15px;
 }
 
 .modules-right {
-	opacity: 0.8;
-	background-color: #150b24;
-	color: #b5f5d2;
-	border-radius: 15px;
+  opacity: 0.8;
+  background-color: @color0;
+  color: @color13;
+  border-radius: 12px;
+}
+
+#window {
+  color: @color13;
 }
 
 #workspaces button {
-	padding: 0 2px;
-	margin-top: 1px;
-	margin-right: 10px;
-	color: #fdf6e3;
+  padding: 0 2px;
+  margin-right: 8px;
+  color: @color1;
 }
 #workspaces button.active {
-	color: #0089eb;
+  color: @color14;
 }
 #workspaces button:hover {
-	box-shadow: inherit;
-	text-shadow: inherit;
+  box-shadow: inherit;
+  text-shadow: inherit;
 }
 #workspaces button:hover {
-	background: #1a1a1a;
-	border: #1a1a1a;
-	padding: 0 3px;
+  background: #1a1a1a;
+  border: #1a1a1a;
+  padding: 0 3px;
 }
 
 #pulseaudio {
-	/* color: #0089eb; */
-	color: #b5f5d2
+  /* color: #0089eb; */
+  color: @color13;
 }
 #battery {
-	/* color: #0089eb; */
-	color: #b5f5d2
+  /* color: #0089eb; */
+  color: @color13;
 }
 
 #disk {
-	/* color: #0089eb; */
-	color: #b5f5d2
+  /* color: #0089eb; */
+  color: @color13;
 }
 #network {
-	/* color: #0089eb; */
-	color: #b5f5d2
+  /* color: #0089eb; */
+  color: @color13;
 }
 
 #clock,
@@ -96,5 +100,5 @@ window#waybar {
 #cpu,
 #battery,
 #disk {
-	padding: 0 10px;
+  padding: 0 10px;
 }

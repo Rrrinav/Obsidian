@@ -13,74 +13,57 @@
 --     Concise = "Please rewrite the following text to make it more concise.",
 -- }
 --
--- return {
---   -- Import the copilot plugin
---   { import = "lazyvim.plugins.extras.coding.copilot" },
---   {
---     "jellydn/CopilotChat.nvim",
---     opts = {
---       show_help = "yes",
---       prompts = prompts,
---       debug = false, -- Set to true to see response from Github Copilot API. The log file will be in ~/.local/state/nvim/CopilotChat.nvim.log.
---     },
---     build = function()
---       vim.notify("Please update the remote plugins by running ':UpdateRemotePlugins', then restart Neovim.")
---     end,
---     event = "VeryLazy",
---     keys = {
---       -- Code related commands
---       { "<leader>cce", "<cmd>CopilotChatExplain<cr>", desc = "CopilotChat - Explain code" },
---       { "<leader>cct", "<cmd>CopilotChatTests<cr>", desc = "CopilotChat - Generate tests" },
---       { "<leader>ccr", "<cmd>CopilotChatReview<cr>", desc = "CopilotChat - Review code" },
---       { "<leader>ccR", "<cmd>CopilotChatRefactor<cr>", desc = "CopilotChat - Refactor code" },
---       { "<leader>ccf", "<cmd>CopilotChatFixCode<cr>", desc = "CopilotChat - Fix code" },
---       { "<leader>ccd", "<cmd>CopilotChatDocumentation<cr>", desc = "CopilotChat - Add documentation for code" },
---       -- Text related commands
---       { "<leader>ccs", "<cmd>CopilotChatSummarize<cr>", desc = "CopilotChat - Summarize text" },
---       { "<leader>ccS", "<cmd>CopilotChatSpelling<cr>", desc = "CopilotChat - Correct spelling" },
---       { "<leader>ccw", "<cmd>CopilotChatWording<cr>", desc = "CopilotChat - Improve wording" },
---       { "<leader>ccc", "<cmd>CopilotChatConcise<cr>", desc = "CopilotChat - Make text concise" },
---       -- Chat with Copilot in visual mode
---       {
---         "<leader>ccv",
---         ":CopilotChatVisual",
---         mode = "x",
---         desc = "CopilotChat - Open in vertical split",
---       },
---       {
---         "<leader>ccx",
---         ":CopilotChatInPlace<cr>",
---         mode = "x",
---         desc = "CopilotChat - Run in-place code",
---       },
---       -- Custom input for CopilotChat
---       {
---         "<leader>cci",
---         function()
---           local input = vim.fn.input("Ask Copilot: ")
---           if input ~= "" then
---             vim.cmd("CopilotChat " .. input)
---           end
---         end,
---         desc = "CopilotChat - Ask input",
---       },
---     },
---   },
--- }
---
 return {
-
+    -- Import the copilot plugin
+    { import = "lazyvim.plugins.extras.coding.copilot" },
     {
-        "CopilotC-Nvim/CopilotChat.nvim",
-        branch = "canary",
-        dependencies = {
-            { "zbirenbaum/copilot.lua" }, -- or github/copilot.vim
-            { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
-        },
+        "jellydn/CopilotChat.nvim",
         opts = {
-            debug = true, -- Enable debugging
-            -- See Configuration section for rest
+            show_help = "yes",
+            prompts = prompts,
+            debug = false, -- Set to true to see response from Github Copilot API. The log file will be in ~/.local/state/nvim/CopilotChat.nvim.log.
         },
-        -- See Commands section for default commands if you want to lazy load on them
+        build = function()
+            vim.notify("Please update the remote plugins by running ':UpdateRemotePlugins', then restart Neovim.")
+        end,
+        event = "VeryLazy",
+        keys = {
+            -- Code related commands
+            { "<leader>cce", "<cmd>CopilotChatExplain<cr>", desc = "CopilotChat - Explain code" },
+            { "<leader>cct", "<cmd>CopilotChatTests<cr>", desc = "CopilotChat - Generate tests" },
+            { "<leader>ccr", "<cmd>CopilotChatReview<cr>", desc = "CopilotChat - Review code" },
+            { "<leader>ccR", "<cmd>CopilotChatRefactor<cr>", desc = "CopilotChat - Refactor code" },
+            { "<leader>ccf", "<cmd>CopilotChatFixCode<cr>", desc = "CopilotChat - Fix code" },
+            { "<leader>ccd", "<cmd>CopilotChatDocumentation<cr>", desc = "CopilotChat - Add documentation for code" },
+            -- Text related commands
+            { "<leader>ccs", "<cmd>CopilotChatSummarize<cr>", desc = "CopilotChat - Summarize text" },
+            { "<leader>ccS", "<cmd>CopilotChatSpelling<cr>", desc = "CopilotChat - Correct spelling" },
+            { "<leader>ccw", "<cmd>CopilotChatWording<cr>", desc = "CopilotChat - Improve wording" },
+            { "<leader>ccc", "<cmd>CopilotChatConcise<cr>", desc = "CopilotChat - Make text concise" },
+            -- Chat with Copilot in visual mode
+            {
+                "<leader>ccv",
+                ":CopilotChatVisual",
+                mode = "x",
+                desc = "CopilotChat - Open in vertical split",
+            },
+            {
+                "<leader>ccx",
+                ":CopilotChatInPlace<cr>",
+                mode = "x",
+                desc = "CopilotChat - Run in-place code",
+            },
+            -- Custom input for CopilotChat
+            {
+                "<leader>cci",
+                function()
+                    local input = vim.fn.input("Ask Copilot: ")
+                    if input ~= "" then
+                        vim.cmd("CopilotChat " .. input)
+                    end
+                end,
+                desc = "CopilotChat - Ask input",
+            },
+        },
     },
 }

@@ -12,12 +12,16 @@ return {
     { "folke/tokyonight.nvim" },
     {
         "rose-pine/neovim",
+        config = function()
+            vim.g.rose_pine_variant = "moon"
+        end,
     },
+
     -- Configure LazyVim to load dracula
     {
         "LazyVim/LazyVim",
         opts = {
-            colorscheme = "calvera",
+            colorscheme = "rose-pine-moon",
             "catppuccin",
             "nordic",
             "sonokai",
