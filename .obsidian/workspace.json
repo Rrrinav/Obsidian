@@ -4,59 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "94a18487e6f54f25",
+        "id": "fa9df768583f2e7c",
         "type": "tabs",
         "children": [
           {
-            "id": "d78b1fdb4d0ccce1",
+            "id": "d1ae218a3fc8ac90",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Resources.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f27a289a76a43d4c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Competitive GFG/Dynamic Programming/4. Longest common sub-sequence (Tab).md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "748d1adbe422a1eb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Competitive GFG/Dynamic Programming/5. Longest Increasing sub-sequence.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "475ce8e184f6470d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "6. Longest Increasing Sub-sequence 0(nlogn).md",
+                "file": "Cellular Automaton/Introduction.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "6. Longest Increasing Sub-sequence 0(nlogn).md",
+                "file": "Cellular Automaton/Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "6. Longest Increasing Sub-sequence 0(nlogn).md",
+                "file": "Cellular Automaton/Introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "6. Longest Increasing Sub-sequence 0(nlogn).md"
+                "file": "Cellular Automaton/Introduction.md"
               }
             }
           },
@@ -194,10 +157,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "475ce8e184f6470d",
+  "active": "d8227f2ff75d416e",
   "lastOpenFiles": [
-    "Competitive GFG/Dynamic Programming/5. Longest Increasing sub-sequence.md",
+    "Untitled",
+    "Cellular Automaton/RESOURCES.md",
+    "Cellular Automaton/Introduction.md",
+    "Competitive GFG/Recursion and Bracktracking/Generate all the balanced string of parentheses for given length.md",
     "6. Longest Increasing Sub-sequence 0(nlogn).md",
+    "Competitive GFG/Recursion and Bracktracking",
+    "Competitive GFG/Dynamic Programming/5. Longest Increasing sub-sequence.md",
     "Competitive GFG/Dynamic Programming/4. Longest common sub-sequence (Tab).md",
     "Competitive GFG/Dynamic Programming/1. Introduction.md",
     "Competitive GFG/Dynamic Programming/Pasted image 20240719222301.png",
@@ -209,8 +177,6 @@
     "Competitive GFG/Dynamic Programming/Pasted image 20240719222309.png",
     "Competitive GFG/Dynamic Programming",
     "Ideas/Programming.md",
-    "Cellular Automaton/RESOURCES.md",
-    "Cellular Automaton/Introduction.md",
     "Excalidraw/Drawing 2024-06-02 15.53.03.excalidraw.md",
     "Excalidraw/Drawing 2024-06-02 15.47.08.excalidraw.md",
     "Excalidraw",
@@ -228,12 +194,9 @@
     "Competitive GFG/3. Basic Practices",
     "Table.md",
     "2024-03-07.md",
-    "Projects/Index.md",
     "Projects/Web Dev",
     "Projects/C++",
     "Projects",
-    "Projects/Web Dev/J and K Website.md",
-    "Competitive GFG/2. STL",
     "Untitled.canvas"
   ]
 }
