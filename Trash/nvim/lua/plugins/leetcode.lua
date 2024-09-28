@@ -13,5 +13,6 @@ return {
     },
     opts = {
         -- configuration goes here
+        image_support = true,
     },
 }

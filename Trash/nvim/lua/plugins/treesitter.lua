@@ -4,7 +4,6 @@ return {
 
         opts = {
             ensure_installed = {
-                "javascript",
                 "typescript",
                 "css",
                 "gitignore",

@@ -14,12 +14,12 @@ vim.opt.guifont = "JetBrainsMono Nerd Font"
 vim.api.nvim_set_hl(0, "Cursor", { fg = "#cc9900", bg = "#fff1da" })
 vim.api.nvim_set_hl(0, "CursorReset", { fg = "#cc9900", bg = "#fff1da" })
 
--- Set backgeound color
-vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
-vim.api.nvim_set_hl(0, "NormalNCFloat", { bg = "none" })
-vim.api.nvim_set_hl(0, "NormalPopup", { bg = "none" })
-vim.api.nvim_set_hl(0, "NormalPopupFloat", { bg = "none" })
-vim.api.nvim_set_hl(0, "NormalPopupNC", { bg = "none" })
-vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "none", ctermbg = "none" })
+-- Set background color
+-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "NormalNCFloat", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "NormalPopup", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "NormalPopupFloat", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "NormalPopupNC", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "none", ctermbg = "none" })

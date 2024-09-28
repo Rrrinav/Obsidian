@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "04979072915337c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ideas/Programming.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cellular Automaton/Introduction.md",
+                "file": "Ideas/Programming.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cellular Automaton/Introduction.md",
+                "file": "Ideas/Programming.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cellular Automaton/Introduction.md"
+                "file": "Ideas/Programming.md"
               }
             }
           },
@@ -157,11 +170,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d8227f2ff75d416e",
+  "active": "04979072915337c4",
   "lastOpenFiles": [
-    "Untitled",
-    "Cellular Automaton/RESOURCES.md",
+    "Operating system/Basics.md",
     "Cellular Automaton/Introduction.md",
+    "Operating system",
+    "Cellular Automaton/RESOURCES.md",
     "Competitive GFG/Recursion and Bracktracking/Generate all the balanced string of parentheses for given length.md",
     "6. Longest Increasing Sub-sequence 0(nlogn).md",
     "Competitive GFG/Recursion and Bracktracking",
@@ -196,7 +210,6 @@
     "2024-03-07.md",
     "Projects/Web Dev",
     "Projects/C++",
-    "Projects",
     "Untitled.canvas"
   ]
 }

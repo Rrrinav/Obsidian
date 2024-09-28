@@ -1,16 +1,172 @@
 return {
-  "goolord/alpha-nvim",
-  opts = function(_, opts)
-    local logo = [[
- ██████╗██████╗ ███████╗ █████╗ ████████╗██╗ ██████╗ ██╗   ██╗███████╗██╗████████╗██╗   ██╗
-██╔════╝██╔══██╗██╔════╝██╔══██╗╚══██╔══╝██║██╔═══██╗██║   ██║██╔════╝██║╚══██╔══╝╚██╗ ██╔╝
-██║     ██████╔╝█████╗  ███████║   ██║   ██║██║   ██║██║   ██║███████╗██║   ██║    ╚████╔╝ 
-██║     ██╔══██╗██╔══╝  ██╔══██║   ██║   ██║██║   ██║██║   ██║╚════██║██║   ██║     ╚██╔╝  
-╚██████╗██║  ██║███████╗██║  ██║   ██║   ██║╚██████╔╝╚██████╔╝███████║██║   ██║      ██║   
- ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝  ╚═════╝ ╚══════╝╚═╝   ╚═╝      ╚═╝   
-
-                                                 [ Disturb at your own risk! ] [ @Rrrinav ]
+    "goolord/alpha-nvim",
+    opts = function(_, opts)
+        local logo = [[
+                        ██╗  ██╗███████╗██╗     ██╗      ██████╗ 
+                        ██║  ██║██╔════╝██║     ██║     ██╔═══██╗
+                        ███████║█████╗  ██║     ██║     ██║   ██║
+                        ██╔══██║██╔══╝  ██║     ██║     ██║   ██║
+                        ██║  ██║███████╗███████╗███████╗╚██████╔╝
+                        ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝ ╚═════╝ 
+                                                                 
+                     [  Disturb at your own risk!  ] ~  [ @Rrrinav ]
 	                                                                                       ]]
-    opts.section.header.val = vim.split(logo, "\n", { trimempty = true })
-  end,
+        opts.section.header.val = vim.split(logo, "\n", { trimempty = true })
+    end,
 }
+
+--                                  .....
+--                             .e$$$$$$$$$$$$$$e.
+--                           z$$ ^$$$$$$$$$$$$$$$$$.
+--                         .$$$* J$$$$$$$$$$$$$$$$$$$e
+--                        .$"  .$$$$$$$$$$$$$$$$$$$$$$*-
+--                       .$  $$$$$$$$$$$$$$$$***$$  .ee"
+--          z**$$        $$r ^**$$$$$$$$$*" .e$$$$$$*"
+--         " -\e$$      4$$$$.         .ze$$$""""
+--        4 z$$$$$      $$$$$$$$$$$$$$$$$$$$"
+--        $$$$$$$$     .$$$$$$$$$$$**$$$$*"
+--      z$$"    $$     $$$$P*""     J$*$$c
+--     $$"      $$F   .$$$          $$ ^$$
+--    $$        *$$c.z$$$          $$   $$
+--   $P          $$$$$$$          4$F   4$
+--  dP            *$$$"           $$    '$r
+-- .$                            J$"     $"
+-- $                             $P     4$
+-- F                            $$      4$
+--                             4$%      4$
+--                             $$       4$
+--                            d$"       $$
+--                            $P        $$
+--                           $$         $$
+--                          4$%         $$
+--                          $$          $$
+--                         d$           $$
+--                         $F           "3
+--                  r=4e="  ...  ..rf   .  ""%
+--                 $**$*"^""=..^4*=4=^""  ^"""  Gilo94'
+--
+--
+-- MMMMMMMMMMMMMMMMMMMMM.                             MMMMMMMMMMMMMMMMMMMMM
+--  `MMMMMMMMMMMMMMMMMMMM           M\  /M           MMMMMMMMMMMMMMMMMMMM'
+--    `MMMMMMMMMMMMMMMMMMM          MMMMMM          MMMMMMMMMMMMMMMMMMM'
+--      MMMMMMMMMMMMMMMMMMM-_______MMMMMMMM_______-MMMMMMMMMMMMMMMMMMM
+--       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+--       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+--       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+--      .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.
+--     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+--                    `MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'
+--                           `MMMMMMMMMMMMMMMMMM'
+--                               `MMMMMMMMMM'
+--                                  MMMMMM
+--                                   MMMM
+--                                    MM
+--
+--
+--                                    z11
+--                                    z@d
+--                                     0@@.                z@.
+--                                    z1jd01j".          j11j
+--                                   110jd@z@000@jjjjjz@1jd.
+--                                 zj@j @jd    "zzzzzj@0dz0
+-- jdd@j1""                    "zj@d@.   00z       .jjd1 @@
+--   "z11j@00jjjzz   .zzzz"zjj00@1z.   .111@01jz".zj10.  110
+--          """j1j1jzzz10j11z""      .zj@0@0@j1j@1@1@j   .@1@
+--              .j@@""j1000@11111111@0@11@1j@00@@@01@0     1d0"
+--               "@d.     jjd11@0@@dd@1@dd1jd0@1d0@zj10z    z@@0z
+--                z00      00"   @1d110@d0@0@1@@j@j0@1@d@11111@1@@111@@@
+--                 1@j     j0.   "@d   "j0@01j0jjjd1@@dddjzzzzz0@dj"
+--                 j@@     j0.   11d"j10@@@1d@1dz10?zz00.     z@0j
+--                 j@d"   z?0. .j@100@j   j11 jj0?@1"@d"     .@@"
+--                 z01   z1@jj@@d@1.     "@0z  "z1@0d1j      011
+--                1z0. "@0d@@@110z"      d@d    .@j@d0j     j1@
+--               0@0 .j@1jjj"  "zj@11"  .d?zzj10@@@0@jd     0@z
+--             "??d1j@@0@1.       .z@@010@00@1".    @@@0.   @d
+--            1@000@11j100dd0@11z.    z1@d0111@01111j0@0d   @d
+--         .j@0@?0@zzz.      "zz@d1"   1ddd0@""""""zzj@00d. d?
+--      zj0d011111jzj0000@11z.   z0d0" 0z10.           .100"0dj
+--  "z10@@j.             .zz10@1   "0d?zj1               j@dd@@
+-- @@1jz                     z10dj   00@1    ..zj"1@zzzj".j@000z
+--                             zdd@  11@  "z001jjjjjjzzj1100111d
+--                              .1??j0@1z0d@.               zzzj@
+--                                j?d1010@.                   .1@@"
+--                                 jz00j                        jd?"
+--                                 jj@                           .d01
+--                                .11j                             j@0"
+--                                j@0                               zj1
+--                                j0j
+--
+--                                         ..
+--                                      ,o""""o
+--                                   ,o$"     o
+--                                ,o$$$
+--                              ,o$$$'
+--                            ,o$"o$'
+--                          ,o$$"$"'
+--                       ,o$"$o"$"'
+--                    ,oo$"$"$"$"$$`                      ,oooo$$$$$$$$oooooo.
+--                 ,o$$$"$"$"$"$"$"o$`..             ,$o$"$$"$"'            `oo.o
+--              ,oo$$$o"$"$"$"$  $"$$$"$`o        ,o$$"o$$$o$'                 `o
+--           ,o$"$"$o$"$"$"$  $"$$o$$o $$o`o   ,$$$$$o$"$$o'                    $
+--         ,o"$$"'  `$"$o$" o$o$o"  $$$o$o$oo"$$$o$"$$"$o"'                     $
+--      ,o$"'        `"$ "$$o$$" $"$o$o$$"$o$$o$o$o"$"$"`""o                   '
+--    ,o$'          o$ `"$"$o "$o$$o$$$"$$$o"$o$$o"$$$    `$$
+--   ,o'           (     `" o$"$o"$o$$$"$o$"$"$o$"$$"$ooo|  ``
+--  $"$             `    (   `"o$$"$o$o$$ "o$o"   $o$o"$"$    )
+-- (  `                   `    `o$"$$o$" "o$$     "o /|"$o"
+--  `                           `$o$$$$"" o$      "o$\|"$o'
+--                               `$o"$"$ $ "       `"$"$o$
+--                                "$$"$$ "oo         ,$""$
+--                                $"$o$$""o"          ,o$"$
+--                                $$"$$"$ "o           `,",
+--                      ,oo$oo$$$$$$"$o$$$ ""o
+--                   ,o$$"o"o$o$$o$$$"$o$$oo"oo
+--                 ,$"oo"$$$$o$$$$"$$$o"o$o"o"$o o
+--                ,$$$""$$o$,      `$$$$"$$$o""$o $o
+--                $o$o$"$,          `$o$"$o$o"$$o$ $$o
+--               $$$o"o$$           ,$$$$o$$o"$"$$ $o$$oo      ,
+--               "$o$$$ $`.        ,"$$o$"o$""$$$$ `"$o$$oo    `o
+--               `$o$o$"$o$o`.  ,.$$"$o$$"$$"o$$$$   `$o$$ooo    $$ooooooo
+--                 `$o$"$o"$"$$"$$"$"$$o$$o"$$o"        `"$o$o            `"o
+--                    `$$"$"$o$$o$"$$"$ $$$  $ "           `$"$o            `o
+--                       `$$"o$o"$o"$o$ "  o $$$o            `$$"o          ,$
+--                          (" ""$"""     o"" "o$o             `$$ooo     ,o$$
+--                               $$"""o   (   "$o$$$"o            `$o$$$o$"$'
+--                                 ) ) )           )  ) )            ` "'
+--
+--
+--                 __                             ___            _aaaa
+--                d8888aa,_                    a8888888a   __a88888888b
+--               d8P   `Y88ba.                a8P'~~~~Y88a888P""~~~~Y88b
+--              d8P      ~"Y88a____aaaaa_____a8P        888          Y88
+--             d8P          ~Y88"8~~~~~~~88888P          88g          88
+--            d8P                           88      ____ _88y__       88b
+--            88                           a88    _a88~8888"8M88a_____888
+--            88                           88P    88  a8"'     `888888888b_
+--           a8P                           88     88 a88         88b     Y8,
+--            8b                           88      8888P         388      88b
+--           a88a                          Y8b       88L         8888.    88P
+--          a8P                             Y8_     _888       _a8P 88   a88
+--         _8P                               ~Y88a888~888g_   a888yg8'  a88'
+--         88                                   ~~~~    ~""8888        a88P
+--        d8'                                                Y8,      888L
+--        8E                                                  88a___a8"888
+--       d8P                                                   ~Y888"   88L
+--       88                                                      ~~      88
+--       88                                                              88
+--       88                                                              88b
+--   ____88a_.      a8a                                                __881
+-- 88""P~888        888b                                 __          8888888888
+--       888        888P                                d88b             88
+--      _888ba       ~            aaaa.                 8888            d8P
+--  a888~"Y88                    888888                 "8P          8aa888_
+--         Y8b                   Y888P"                                88""888a
+--         _88g8                  ~~~                                 a88    ~~
+--     __a8"888_                                                  a_ a88
+--    88"'    "88g                                                 "888g_
+--    ~         `88a_                                            _a88'"Y88gg,
+--                 "888aa_.                                   _a88"'      ~88
+--                    ~~""8888aaa______                ____a888P'
+--                            ~~""""""888888888888888888""~~~
+--                                       ~~~~~~~~~~~~
+--

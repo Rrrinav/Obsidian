@@ -1,11 +1,4 @@
 @import "~/.cache/wal/colors-rofi-dark"
-/**
- *
- * Author : Aditya Shakya (adi1090x)
- * Github : @adi1090x
- * 
- * Configuration For Rofi Version: 1.7.3
- **/
 
 configuration {
 	/*---------- General setting ----------*/
@@ -180,55 +173,40 @@ configuration {
 	me-accept-custom: "Control+MouseDPrimary";
 */
 }
-
+@media (enabled: env(PREVIEW, false)) {
+	#window {
+		height: 80%;
+		children: [ icon-current-entry, mainbox ]; /* Put preview on the left */
+	}
+    icon-current-entry {
+        expand:          false;
+        size:            30%;
+    }
+	#mainbox {
+		width: 90%;
+		padding-left: 5px;  /* Adjust for spacing */
+	}
+}
 /*******************************************************
  * ROFI Arch Dark Transparent colors for EndeavourOS
  * Maintainer: joekamprad <joekamprad@endeavouros.com>
  *******************************************************/
 * {
 	background: transparent;
-    background-color: rgba ( 138, 122, 191, 0.09 );
-    text-color: white;
+    background-color: rgba ( 18, 18, 18, 0.3 );
     padding: 10px;
-    // selected-normal-foreground:  rgba ( 181, 245, 210, 100 % );
-    // foreground:                  rgba ( 225, 225, 225, 100 % );
     normal-foreground:           @foreground;
-    // alternate-normal-background: rgba ( 45, 48, 59, 1 % );
-    // // red:                         rgba ( 220, 50, 47, 100 % );
-    // selected-urgent-foreground:  rgba ( 249, 249, 249, 100 % );
-    // blue:                        rgba ( 38, 139, 210, 100 % );
-    // urgent-foreground:           rgba ( 204, 102, 102, 100 % );
-    // alternate-urgent-background: rgba ( 75, 81, 96, 90 % );
-    // active-foreground:           rgba ( 101, 172, 255, 100 % );
-    // lightbg:                     rgba ( 238, 232, 213, 100 % );
-    // selected-active-foreground:  rgba ( 249, 249, 249, 100 % );
-    // alternate-active-background: rgba ( 45, 48, 59, 88 % );
-    // background:                  rgba ( 45, 48, 59, 88 % );
-    // alternate-normal-foreground: @foreground;
-    // normal-background:           rgba ( 45, 48, 59, 1 % );
-    // lightfg:                     rgba ( 88, 104, 117, 100 % );
-    // selected-normal-background:  rgba ( 24, 26, 32, 100 % );
 	border:                      0px;       
-	//border-radius: 10px;          
-    // spacing:                     2;
-    // separatorcolor:              rgba ( 45, 48, 59, 1 % );
-    // urgent-background:           rgba ( 45, 48, 59, 15 % );
-    // selected-urgent-background:  rgba ( 165, 66, 66, 100 % );
-    // alternate-urgent-foreground: @urgent-foreground;
-    // background-color:            rgba ( 0, 0, 0, 0 % );
-    // alternate-active-foreground: @active-foreground;
-    // active-background:           rgba ( 29, 31, 33, 17 % );
-    // selected-active-background:  rgba ( 26, 28, 35, 100 % );
 }
 #mainbox {
-  border-radius: 15px;	
+  border-radius: 0px;	
 }
 
 #window {
 	border: 2px;
 	border-color: @active-background;
 	padding: 4px;
-	border-radius: 12px;
+	border-radius: 0px;
     //transparency: "screenshot";
 }
 

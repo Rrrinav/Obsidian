@@ -1,8 +1,29 @@
 return {
     -- add dracula
-    { "Mofiqul/dracula.nvim" },
+    {
+        "Mofiqul/dracula.nvim",
+        opts = {
+            lualine_bg_color = "#aa4755", -- default nil
+        },
+    },
     { "catppuccin/nvim" },
-    { "AlexvZyl/nordic.nvim" },
+    {
+        "AlexvZyl/nordic.nvim",
+        opts = {
+            bright_border = false,
+            telescope = {
+                -- Available styles: `classic`, `flat`.
+                style = "classic",
+            },
+            ts_context = {
+                dark_background = false,
+            },
+            override = {
+                PmenuSel = { bg = "#0e005c" },
+            },
+        },
+    },
+    { "myagko/nymph", branch = "Nvim" },
     { "sainnhe/sonokai" },
     { "sainnhe/everforest" },
     { "sainnhe/gruvbox-material" },
@@ -21,7 +42,7 @@ return {
     {
         "LazyVim/LazyVim",
         opts = {
-            colorscheme = "rose-pine-moon",
+            colorscheme = "edge",
             "catppuccin",
             "nordic",
             "sonokai",

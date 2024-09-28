@@ -4,12 +4,18 @@
 # [└──────>](bold green) '''
 
 #honeycomb ice pixelated 
+#[┌─](fg:#b5f5d2 bold)[  ](bold blue fg:#b5f5d2)\
+#[  ](bold blue fg:#b5f5d2)\
+#[│](fg:#b5f5d2 bold)
+# ┌─└
 format = """
-[┌─](fg:#b5f5d2 bold)[  ](bold blue fg:#b5f5d2)\
+[┌─](fg:#fafafa  bold)\
+[\\[](fg:#fafafa bold)[ ](bold blue fg:#fafafa)\
 $username\
+[- 2022bcse005](fg:#fafafa)\
 $os\
 $time\
-[  ](bold blue fg:#b5f5d2)\
+[ \\]](bold blue fg:#fafafa)\
 [ -](#fafafa)\
 $directory\
 $git_branch\
@@ -26,8 +32,7 @@ $julia\
 $nodejs\
 $nim\
 $rust
-[│](fg:#b5f5d2 bold)
-[└──](fg:#b5f5d2 bold)\
+[└──](fg:#fafafa bold)\
 $character\
 """
 command_timeout = 5000
@@ -37,8 +42,8 @@ command_timeout = 5000
 # You can also replace your username with a neat symbol like  to save some space
 
 [character]
-success_symbol = '[ ](fg:#b5f5d2)'
-error_symbol = '[ ](bold red)'
+success_symbol = '[>](fg:#b5f5d2)'
+error_symbol = '[>](bold red)'
 
 # ~/.config/starship.toml
 # 
@@ -54,7 +59,7 @@ Fedora = "  "
 
 [username]
 show_always = true
-style_user = "fg:#b5f5d2"
+style_user = "fg:#fafafa"
 format = '[$user ]($style)'
 
 [directory]

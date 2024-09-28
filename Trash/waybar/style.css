@@ -7,6 +7,7 @@
 
 window#waybar {
   background: none;
+  opacity: 0.8;
   color: @color7;
 }
 
@@ -18,6 +19,7 @@ window#waybar {
 #clock.3,
 #pulseaudio,
 #memory,
+#bluetooth,
 #cpu,
 #battery,
 #disk,
@@ -28,34 +30,41 @@ window#waybar {
   border-radius: 2px;
   padding: 3px 5px;
   margin: 0px 2px;
+  margin-bottom: 3px;
 }
 
 #tray {
-  background: #15acb1;
-  padding: 4px 12px;
+  background: @color0;
+  padding: 0px 8px;
   margin: 2px;
   margin-right: 10px;
   border-radius: 10px;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 #clock.2,
 #clock.3 {
-  opacity: 0.8;
+  /* opacity: 0.8; */
   background-color: @color0;
   color: @color13;
-  padding: 4px 15px;
+  padding: 3px 15px;
 }
 
 .modules-right {
   opacity: 0.8;
   background-color: @color0;
   color: @color13;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 #window {
+  background-color: @color0;
   color: @color13;
+}
+
+#workspaces {
+  background-color: @color0;
+  margin-right: 5px;
 }
 
 #workspaces button {
