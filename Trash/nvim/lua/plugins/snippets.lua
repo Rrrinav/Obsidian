@@ -38,8 +38,8 @@ return {
                     t({ "    return 0;", "" }),
                     t({ "}" }),
                 }),
-                s("forces", {
-                    t({ "#include <bits/stdc++.h>", "" }),
+                s("competitive_progg", {
+                    t({ " #include <bits/stdc++.h>", "" }),
                     t({ "using namespace std;", "" }),
                     t({
                         "",

@@ -18,7 +18,7 @@ return {
             ts_context = {
                 dark_background = false,
             },
-            override = {
+            on_highlight = {
                 PmenuSel = { bg = "#0e005c" },
             },
         },
@@ -34,7 +34,7 @@ return {
     {
         "rose-pine/neovim",
         config = function()
-            vim.g.rose_pine_variant = "moon"
+            vim.g.rose_pine_variant = "main"
         end,
     },
 
@@ -42,7 +42,7 @@ return {
     {
         "LazyVim/LazyVim",
         opts = {
-            colorscheme = "edge",
+            colorscheme = "sonokai",
             "catppuccin",
             "nordic",
             "sonokai",
