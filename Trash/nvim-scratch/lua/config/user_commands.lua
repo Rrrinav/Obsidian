@@ -1,7 +1,7 @@
--- Autocmds are automatically loaded on the VeryLazy event
--- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
--- Add any additional autocmds here
+local M = {}
 
+function M.setup()
+    
 -- Open a floating terminal in project root directory
 vim.api.nvim_create_user_command("Fterm", function(opts)
     local cmd = opts.args ~= "" and opts.args or "bash"
@@ -35,7 +35,8 @@ end, {})
 -- Function to generate execution commands based on file type
 local function get_execution_command(filepath, filetype)
     local filename = vim.fn.expand("%:t:r") -- Get the file name without extension
-    local output = vim.fn.expand("%:p:h") .. "/" .. filename -- Output binary in the same directory as the source file
+    local output = vim.fn.expand("%:p:h") ..
+        "/" .. filename                     -- Output binary in the same directory as the source file
 
     if filetype == "lua" then
         return "lua " .. filepath
@@ -59,7 +60,7 @@ end
 -- Create the ExecuteFile command
 vim.api.nvim_create_user_command("ExecuteFile", function()
     local filepath = vim.fn.expand("%:p") -- Get the full path of the current file
-    local filetype = vim.bo.filetype -- Get the file type of the current buffer
+    local filetype = vim.bo.filetype      -- Get the file type of the current buffer
 
     -- Get the command to execute the file
     local cmd = get_execution_command(filepath, filetype)
@@ -74,3 +75,7 @@ vim.api.nvim_create_user_command("ExecuteFile", function()
         vim.notify("No execution command defined for file type: " .. filetype, vim.log.levels.ERROR)
     end
 end, {})
+
+end
+
+return M

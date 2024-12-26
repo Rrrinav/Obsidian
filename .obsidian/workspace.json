@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ideas/Programming.md",
+                "file": "Operating system/Basics.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "32804aaa3c3ded30",
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ideas/Programming.md",
+                "file": "Operating system/Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Ideas/Programming.md",
+                "file": "Operating system/Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Ideas/Programming.md"
+                "file": "Operating system/Basics.md"
               }
             }
           },
@@ -172,6 +173,7 @@
   },
   "active": "04979072915337c4",
   "lastOpenFiles": [
+    "Ideas/Programming.md",
     "Operating system/Basics.md",
     "Cellular Automaton/Introduction.md",
     "Operating system",
@@ -190,7 +192,6 @@
     "README.md",
     "Competitive GFG/Dynamic Programming/Pasted image 20240719222309.png",
     "Competitive GFG/Dynamic Programming",
-    "Ideas/Programming.md",
     "Excalidraw/Drawing 2024-06-02 15.53.03.excalidraw.md",
     "Excalidraw/Drawing 2024-06-02 15.47.08.excalidraw.md",
     "Excalidraw",

@@ -1,5 +1,0 @@
-return {
-    {
-        "kassio/neoterm",
-    },
-}

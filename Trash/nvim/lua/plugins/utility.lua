@@ -37,4 +37,37 @@ return {
             hijack_file_patterns = { "*.png", "*.jpg", "*.jpeg", "*.gif", "*.webp", "*.avif" }, -- render image files as images when opened
         },
     },
+    {
+        "ej-shafran/compile-mode.nvim",
+        -- tag = "v5.*",
+        -- you can just use the latest version:
+        -- branch = "latest",
+        -- or the most up-to-date updates:
+        branch = "nightly",
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            -- if you want to enable coloring of ANSI escape codes in
+            -- compilation output, add:
+            { "m00qek/baleia.nvim", tag = "v1.3.0" },
+        },
+        config = function()
+            ---@type CompileModeOpts
+            vim.g.compile_mode = {
+                -- to add ANSI escape code support, add:
+                -- baleia_setup = true,
+            }
+        end,
+    },
+    {
+        "okuuva/auto-save.nvim",
+        cmd = "ASToggle", -- optional for lazy loading on command
+        event = { "InsertLeave" }, -- optional for lazy loading on trigger events
+        opts = {
+            trigger_events = { -- See :h events
+                immediate_save = { "InsertLeave" }, -- vim events that trigger an immediate save
+                defer_save = { "InsertLeave" }, -- vim events that trigger a deferred save (saves after `debounce_delay`)
+            }, -- your config goes here
+            -- or just leave it empty :)
+        },
+    },
 }

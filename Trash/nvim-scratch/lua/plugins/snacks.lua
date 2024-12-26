@@ -1,15 +1,104 @@
-return {
+return
+{
     {
-        "goolord/alpha-nvim",
-        enabled = false,
+        "lewis6991/gitsigns.nvim",
+        config = function()
+            require('gitsigns').setup {
+                signs = {
+                    add = { text = "▎" },
+                    change = { text = "▎" },
+                    delete = { text = "" },
+                    topdelete = { text = "" },
+                    changedelete = { text = "▎" },
+                    untracked = { text = "▎" },
+                },
+                signs_staged = {
+                    add = { text = "▎" },
+                    change = { text = "▎" },
+                    delete = { text = "" },
+                    topdelete = { text = "" },
+                    changedelete = { text = "▎" },
+                },
+                signs_staged_enable = true, -- Enable staged signs
+                signcolumn = true,          -- Toggle with `:Gitsigns toggle_signs`
+                numhl = false,              -- Toggle with `:Gitsigns toggle_numhl`
+                linehl = false,             -- Toggle with `:Gitsigns toggle_linehl`
+                word_diff = false,          -- Toggle with `:Gitsigns toggle_word_diff`
+                watch_gitdir = {
+                    follow_files = true
+                }, on_attach = function(buffer)
+                local gs = package.loaded.gitsigns
+
+                local function map(mode, l, r, desc)
+                    vim.keymap.set(mode, l, r, { buffer = buffer, desc = desc })
+                end
+
+                -- stylua: ignore start
+                map("n", "]h", function()
+                    if vim.wo.diff then
+                        vim.cmd.normal({ "]c", bang = true })
+                    else
+                        gs.nav_hunk("next")
+                    end
+                end, "Next Hunk")
+                map("n", "[h", function()
+                    if vim.wo.diff then
+                        vim.cmd.normal({ "[c", bang = true })
+                    else
+                        gs.nav_hunk("prev")
+                    end
+                end, "Prev Hunk")
+            end,
+                auto_attach                  = true,
+                attach_to_untracked          = false,
+                current_line_blame           = false, -- Toggle with `:Gitsigns toggle_current_line_blame`
+                current_line_blame_opts      = {
+                    virt_text = true,
+                    virt_text_pos = 'eol', -- 'eol' | 'overlay' | 'right_align'
+                    delay = 1000,
+                    ignore_whitespace = false,
+                    virt_text_priority = 100,
+                    use_focus = true,
+                },
+                current_line_blame_formatter = '<author>, <author_time:%R> - <summary>',
+                sign_priority                = 6,
+                update_debounce              = 100,
+                status_formatter             = nil,   -- Use default
+                max_file_length              = 40000, -- Disable if file is longer than this (in lines)
+                preview_config               = {
+                    -- Options passed to nvim_open_win
+                    border = 'single',
+                    style = 'minimal',
+                    relative = 'cursor',
+                    row = 0,
+                    col = 3
+                },
+            }
+        end
     },
-    { "nvimdev/dashboard-nvim", enabled = false },
     {
         "folke/snacks.nvim",
         priority = 1000,
         lazy = false,
         ---@type snacks.Config
         opts = {
+            indent = {
+                enabled = true
+            },
+            statuscolumn = {
+                enabled = true,
+                left = { "mark", "sign" }, -- priority of signs on the left (high to low)
+                right = { "fold", "git" }, -- priority of signs on the right (high to low)
+                folds = {
+                    open = true,           -- show open fold icons
+                    git_hl = false,        -- use Git Signs hl for fold icons
+                },
+                git = {
+                    -- patterns to match Git signs
+                    patterns = { "GitSign", "MiniDiffSign" },
+                },
+                refresh = 50, -- refresh at most every 50ms
+            },
             scroll = {
                 animate = {
                     duration = { step = 15, total = 250 },
@@ -18,7 +107,8 @@ return {
                 spamming = 10, -- threshold for spamming detection
                 -- what buffers to animate
                 filter = function(buf)
-                    return vim.g.snacks_scroll ~= false and vim.b[buf].snacks_scroll ~= false and vim.bo[buf].buftype ~= "terminal"
+                    return vim.g.snacks_scroll ~= false and vim.b[buf].snacks_scroll ~= false and
+                        vim.bo[buf].buftype ~= "terminal"
                 end,
             },
             terminal = {},
@@ -26,9 +116,15 @@ return {
             input = { enabled = true },
             dashboard = {
                 enabled = true,
+                styles = {
+                    wo = {
+                        number = false,
+                        relativenumber = false,
+                    }
+                },
                 sections = {
                     { section = "header" },
-                    { section = "keys", gap = 1, padding = 1 },
+                    { section = "keys",  gap = 1, padding = 1 },
                     {
                         pane = 2,
                         height = 30,
@@ -65,12 +161,17 @@ return {
                 timeout = 3000,
             },
             quickfile = { enabled = true },
-            statuscolumn = { enabled = true },
             words = { enabled = true },
             styles = {
                 notification = {
-                    wo = { wrap = true }, -- Wrap notifications
+                    wo = { wrap = true, }
                 },
+                dashboard = {
+                    wo = {
+                        number = false, -- This ensures no line numbers
+                        relativenumber = false,
+                    }
+                }
             },
         },
         keys = {
@@ -202,7 +303,8 @@ return {
                         .option("conceallevel", { off = 0, on = vim.o.conceallevel > 0 and vim.o.conceallevel or 2 })
                         :map("<leader>uc")
                     Snacks.toggle.treesitter():map("<leader>uT")
-                    Snacks.toggle.option("background", { off = "light", on = "dark", name = "Dark Background" }):map("<leader>ub")
+                    Snacks.toggle.option("background", { off = "light", on = "dark", name = "Dark Background" }):map(
+                        "<leader>ub")
                     Snacks.toggle.inlay_hints():map("<leader>uh")
                 end,
             })
