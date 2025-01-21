@@ -2,10 +2,16 @@ require("config.lazy")
 require("config.basic_gui").setup()
 require("config.highlights").setup()
 require("config.user_commands").setup()
+require("config.swap_words").setup()
 
 
-vim.notify("Hello Rinav,\nhappy coding!")
-
+-- vim.opt.foldtext = "v:lua.MyFoldText()"
+--
+-- function _G.MyFoldText()
+--     local line = vim.fn.getline(vim.v.foldstart)
+--     return line
+-- end
+-- {1, 2, 3, 4, 5, 6, 7, 8}
 -- -- local comment_hl = vim.api.nvim_get_hl_by_name("Comment", true)
 -- --  local cursorline_hl = vim.api.nvim_get_hl_by_name("CursorLine", true)
 -- --

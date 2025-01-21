@@ -1,25 +1,25 @@
 return {
+  {
     "kawre/leetcode.nvim",
-    build = ":TSUpdate html",
+    build = ":TSUpdate html", -- if you have `nvim-treesitter` installed
     dependencies = {
-        "nvim-telescope/telescope.nvim",
-        "nvim-lua/plenary.nvim", -- required by telescope
-        "MunifTanjim/nui.nvim",
-
-        -- optional
-        "nvim-treesitter/nvim-treesitter",
-        "rcarriga/nvim-notify",
-        "nvim-tree/nvim-web-devicons",
+      "nvim-telescope/telescope.nvim",
+      -- "ibhagwan/fzf-lua",
+      "nvim-lua/plenary.nvim",
+      "MunifTanjim/nui.nvim",
     },
     opts = {
-        -- configuration goes here
-        image_support = true,
+      ---@type boolean
+      image_support = true,
+      ---@type lc.picker
+      picker = { provider = "telescope" },
     },
-    {
-        "xeluxee/competitest.nvim",
-        dependencies = "MunifTanjim/nui.nvim",
-        config = function()
-            require("competitest").setup()
-        end,
-    },
+  },
+  {
+    "xeluxee/competitest.nvim",
+    dependencies = "MunifTanjim/nui.nvim",
+    config = function()
+      require("competitest").setup()
+    end,
+  },
 }
